@@ -2,11 +2,11 @@
 {
     using Domain.Entities;
 
-    public class GismeteoParser : IWeatherParser
+    public class YandexWeatherParser : IWeatherParser
     {
         public IWeather Parse(IWeatherSource weatherSource)
         {
-            throw new System.NotImplementedException();
+            return null;
         }
     }
 }

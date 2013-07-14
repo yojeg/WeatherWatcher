@@ -39,7 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parsers\ForecastParser.cs" />
+    <Compile Include="Parsers\GismeteoParser.cs" />
+    <Compile Include="Parsers\IWeatherParser.cs" />
+    <Compile Include="Parsers\YahooWeatherParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherMonitor.Domain\WeatherMonitor.Domain.csproj">
+      <Project>{b7ce7c3d-d098-4f41-9c10-06df6248244e}</Project>
+      <Name>WeatherMonitor.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

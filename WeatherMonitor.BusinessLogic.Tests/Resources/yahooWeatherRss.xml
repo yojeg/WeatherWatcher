@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Chelyabinsk, RU</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Chelyabinsk__RU/*http://weather.yahoo.com/forecast/RSXX0024_c.html</link>
+<description>Yahoo! Weather for Chelyabinsk, RU</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 14 Jul 2013 9:59 pm YEKT</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Chelyabinsk" region=""   country="Russia"/>
+<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<yweather:wind chill="16"   direction="340"   speed="20.92" />
+<yweather:atmosphere humidity="63"  visibility="9.99"  pressure="982.05"  rising="0" />
+<yweather:astronomy sunrise="5:31 am"   sunset="10:27 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Chelyabinsk, RU at 9:59 pm YEKT</title>
+<geo:lat>55.17</geo:lat>
+<geo:long>61.4</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Chelyabinsk__RU/*http://weather.yahoo.com/forecast/RSXX0024_c.html</link>
+<pubDate>Sun, 14 Jul 2013 9:59 pm YEKT</pubDate>
+<yweather:condition  text="Mostly Cloudy"  code="28"  temp="16"  date="Sun, 14 Jul 2013 9:59 pm YEKT" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/28.gif"/><br />
+<b>Current Conditions:</b><br />
+Mostly Cloudy, 16 C<BR />
+<BR /><b>Forecast:</b><BR />
+Sun - Showers Early. High: 20 Low: 11<br />
+Mon - Mostly Cloudy. High: 17 Low: 11<br />
+Tue - AM Showers. High: 18 Low: 9<br />
+Wed - Showers. High: 18 Low: 8<br />
+Thu - Partly Cloudy. High: 23 Low: 11<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Chelyabinsk__RU/*http://weather.yahoo.com/forecast/RSXX0024_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Sun" date="14 Jul 2013" low="11" high="20" text="Showers Early" code="45" />
+<yweather:forecast day="Mon" date="15 Jul 2013" low="11" high="17" text="Mostly Cloudy" code="28" />
+<yweather:forecast day="Tue" date="16 Jul 2013" low="9" high="18" text="AM Showers" code="39" />
+<yweather:forecast day="Wed" date="17 Jul 2013" low="8" high="18" text="Showers" code="11" />
+<yweather:forecast day="Thu" date="18 Jul 2013" low="11" high="23" text="Partly Cloudy" code="30" />
+<guid isPermaLink="false">RSXX0024_2013_07_18_7_00_YEKT</guid>
+</item>
+</channel>
+</rss>
+
+<!-- api3.weather.ch1.yahoo.com Sun Jul 14 16:27:30 PST 2013 -->

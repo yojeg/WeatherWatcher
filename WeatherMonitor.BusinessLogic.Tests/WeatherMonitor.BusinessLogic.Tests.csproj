@@ -45,11 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Parsers\GoogleWeatherParserTests.cs" />
+    <Compile Include="Parsers\WeatherCoUaParserTests.cs" />
+    <Compile Include="Parsers\YahooWeatherParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherMonitor.BusinessLogic\WeatherMonitor.BusinessLogic.csproj">
+      <Project>{dbee7a49-8aee-4178-a03c-b927a27340d2}</Project>
+      <Name>WeatherMonitor.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeatherMonitor.Domain\WeatherMonitor.Domain.csproj">
+      <Project>{b7ce7c3d-d098-4f41-9c10-06df6248244e}</Project>
+      <Name>WeatherMonitor.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\weather.co.ua1515.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\yahooWeatherRss.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

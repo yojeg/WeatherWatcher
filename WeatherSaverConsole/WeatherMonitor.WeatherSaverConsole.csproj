@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\WeatherMonitor.Web\Bin\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherMonitor.DataAccessLayer\WeatherMonitor.DataAccessLayer.csproj">
+      <Project>{40df2ff7-ff13-409a-8079-60c8df7cefea}</Project>
+      <Name>WeatherMonitor.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeatherMonitor.Domain\WeatherMonitor.Domain.csproj">
+      <Project>{b7ce7c3d-d098-4f41-9c10-06df6248244e}</Project>
+      <Name>WeatherMonitor.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

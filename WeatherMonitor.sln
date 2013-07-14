@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherMonitor.WeatherSaverConsole", "WeatherSaverConsole\WeatherMonitor.WeatherSaverConsole.csproj", "{3FD86C50-476C-4668-8540-D0168DDCAA2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherMonitor.Web", "WeatherMonitor.Web\WeatherMonitor.Web.csproj", "{81C92B14-6C65-423E-A193-FC54A8743849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherMonitor.BusinessLogic", "WeatherMonitor.BusinessLogic\WeatherMonitor.BusinessLogic.csproj", "{DBEE7A49-8AEE-4178-A03C-B927A27340D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherMonitor.DataAccessLayer", "WeatherMonitor.DataAccessLayer\WeatherMonitor.DataAccessLayer.csproj", "{40DF2FF7-FF13-409A-8079-60C8DF7CEFEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FD86C50-476C-4668-8540-D0168DDCAA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD86C50-476C-4668-8540-D0168DDCAA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD86C50-476C-4668-8540-D0168DDCAA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD86C50-476C-4668-8540-D0168DDCAA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C92B14-6C65-423E-A193-FC54A8743849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C92B14-6C65-423E-A193-FC54A8743849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C92B14-6C65-423E-A193-FC54A8743849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C92B14-6C65-423E-A193-FC54A8743849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEE7A49-8AEE-4178-A03C-B927A27340D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEE7A49-8AEE-4178-A03C-B927A27340D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEE7A49-8AEE-4178-A03C-B927A27340D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEE7A49-8AEE-4178-A03C-B927A27340D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40DF2FF7-FF13-409A-8079-60C8DF7CEFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DF2FF7-FF13-409A-8079-60C8DF7CEFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DF2FF7-FF13-409A-8079-60C8DF7CEFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DF2FF7-FF13-409A-8079-60C8DF7CEFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

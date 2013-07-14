@@ -4,7 +4,7 @@
 
     public interface IWeather
     {
-        int Preassure { get; set; }
+        decimal Pressure { get; set; }
         int Degrees { get; set; }
         decimal WindSpeed { get; set; }
         decimal Humidity { get; set; }

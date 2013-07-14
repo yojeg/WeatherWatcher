@@ -8,7 +8,7 @@
         [Key]
         public int Id { get; set; }
 
-        public int Preassure { get; set; }
+        public decimal Pressure { get; set; }
         public int Degrees { get; set; }
         public decimal WindSpeed { get; set; }
         public decimal Humidity { get; set; }

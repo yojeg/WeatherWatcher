@@ -39,7 +39,7 @@
                     {
                         Degrees = int.Parse(currentWeatherNode.Element("t").Value),
                         Humidity = int.Parse(currentWeatherNode.Element("h").Value),
-                        Preassure = int.Parse(currentWeatherNode.Element("p").Value),
+                        Pressure = int.Parse(currentWeatherNode.Element("p").Value),
                         WindSpeed = int.Parse(currentWeatherNode.Element("w").Value)
                     };
             }

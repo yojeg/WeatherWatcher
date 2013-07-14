@@ -1,5 +1,7 @@
 ﻿namespace WeatherMonitor.BusinessLogic.Parsers
 {
+    using System.Globalization;
+    using System.Xml.Linq;
     using ContentManager;
     using Domain.Entities;
 
@@ -26,7 +28,30 @@
 
         private IWeather ParseContent(string content)
         {
-            return null;
+            IWeather weather = null;
+
+            var xmlDocument = XDocument.Parse(content);
+
+            XNamespace weatherNamespace = "http://xml.weather.yahoo.com/ns/rss/1.0";
+
+            var currentWeatherNode = xmlDocument.Root.Element("channel");
+
+            if (currentWeatherNode != null)
+            {
+                var windElement = currentWeatherNode.Element(weatherNamespace + "wind");
+                var atmosphere = currentWeatherNode.Element(weatherNamespace + "atmosphere");
+
+                weather = new Weather
+                {
+                    Degrees = int.Parse(windElement.Attribute("chill").Value),
+                    Humidity = decimal.Parse(atmosphere.Attribute("humidity").Value, NumberStyles.AllowDecimalPoint, new NumberFormatInfo(){NumberDecimalSeparator = "."}),
+                    Pressure = decimal.Parse(atmosphere.Attribute("pressure").Value, NumberStyles.AllowDecimalPoint, new NumberFormatInfo() { NumberDecimalSeparator = "." }),
+                    WindSpeed = decimal.Parse(windElement.Attribute("speed").Value, NumberStyles.AllowDecimalPoint, new NumberFormatInfo() { NumberDecimalSeparator = "." })
+                };
+            }
+
+            return weather;
+
         }
     }
 }

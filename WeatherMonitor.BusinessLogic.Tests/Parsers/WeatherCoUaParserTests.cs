@@ -38,7 +38,7 @@
 
             Assert.AreEqual(weather.Degrees, 15);
             Assert.AreEqual(weather.Humidity, 67);
-            Assert.AreEqual(weather.Preassure, 737);
+            Assert.AreEqual(weather.Pressure, 737);
             Assert.AreEqual(weather.WindSpeed, 5);
         }
 

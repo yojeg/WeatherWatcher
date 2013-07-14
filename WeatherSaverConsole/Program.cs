@@ -1,5 +1,7 @@
 ﻿namespace WeatherMonitor.WeatherSaverConsole
 {
+    using System;
+    using System.Timers;
     using DataAccessLayer;
     using Domain.Entities;
 
@@ -7,6 +9,7 @@
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }

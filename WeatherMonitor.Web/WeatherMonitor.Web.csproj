@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.1.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\packages\Autofac.Mvc4.3.1.0\lib\net40\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="AutoMapper">
       <HintPath>..\packages\AutoMapper.2.2.1\lib\net40\AutoMapper.dll</HintPath>
     </Reference>
@@ -182,6 +188,7 @@
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IoCConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -189,6 +196,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\WeatherModel.cs" />
+    <Compile Include="Modules\DataAccessModule.cs" />
+    <Compile Include="Modules\WebApplicationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -300,6 +309,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeatherMonitor.DataAccessLayer\WeatherMonitor.DataAccessLayer.csproj">
+      <Project>{40df2ff7-ff13-409a-8079-60c8df7cefea}</Project>
+      <Name>WeatherMonitor.DataAccessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeatherMonitor.Domain\WeatherMonitor.Domain.csproj">
       <Project>{b7ce7c3d-d098-4f41-9c10-06df6248244e}</Project>
       <Name>WeatherMonitor.Domain</Name>

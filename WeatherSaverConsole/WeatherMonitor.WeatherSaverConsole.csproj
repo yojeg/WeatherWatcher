@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForecastMonitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,6 +52,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeatherMonitor.BusinessLogic\WeatherMonitor.BusinessLogic.csproj">
+      <Project>{dbee7a49-8aee-4178-a03c-b927a27340d2}</Project>
+      <Name>WeatherMonitor.BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeatherMonitor.DataAccessLayer\WeatherMonitor.DataAccessLayer.csproj">
       <Project>{40df2ff7-ff13-409a-8079-60c8df7cefea}</Project>
       <Name>WeatherMonitor.DataAccessLayer</Name>

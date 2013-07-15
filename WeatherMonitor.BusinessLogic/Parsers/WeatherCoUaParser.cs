@@ -13,6 +13,8 @@
             _contentManager = contentManager;
         }
 
+        public string Name { get { return "WeatherCoUa"; }}
+
         public IWeather Parse(IWeatherSource weatherSource)
         {
             var content = _contentManager.Get(weatherSource.Url);

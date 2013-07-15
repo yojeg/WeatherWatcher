@@ -2,7 +2,7 @@
 {
     public interface IWeatherSource
     {
-        string Name { get; set; }
+        string SourceName { get; set; }
         string City { get; set; }
         string Url { get; set; }
     }

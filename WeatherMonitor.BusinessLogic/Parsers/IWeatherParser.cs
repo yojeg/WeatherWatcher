@@ -4,6 +4,7 @@
 
     public interface IWeatherParser
     {
+        string Name { get; }
         IWeather Parse(IWeatherSource weatherSource);
     }
 }

@@ -14,6 +14,8 @@
             _contentManager = contentManager;
         }
 
+        public string Name { get { return "YahooWeather"; } }
+
         public IWeather Parse(IWeatherSource weatherSource)
         {
             var content = _contentManager.Get(weatherSource.Url);

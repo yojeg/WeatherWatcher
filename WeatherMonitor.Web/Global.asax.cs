@@ -5,12 +5,15 @@ using System.Web.Routing;
 
 namespace WeatherMonitor.Web
 {
+    using System;
     using App_Start;
 
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
         {
+            AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+
             DependencyResolver.SetResolver(IocConfig.CreateDependencyResolver());
 
             AreaRegistration.RegisterAllAreas();

@@ -23,7 +23,7 @@
             _weatherSource = new WeatherSource()
             {
                 City = "Chelyabinsk",
-                Name = "Weather.co.ua Chelyabinsk",
+                SourceName = "Weather.co.ua Chelyabinsk",
                 Url = "test"
             };
 

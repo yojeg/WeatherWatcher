@@ -39,8 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContentManager\ContentManager.cs" />
     <Compile Include="ContentManager\IContentManager.cs" />
-    <Compile Include="Parsers\YandexWeatherParser.cs" />
     <Compile Include="Parsers\WeatherCoUaParser.cs" />
     <Compile Include="Parsers\IWeatherParser.cs" />
     <Compile Include="Parsers\YahooWeatherParser.cs" />
